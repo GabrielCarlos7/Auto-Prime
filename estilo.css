@@ -1,0 +1,56 @@
+/* Customização de Cores Baseadas na Logo Fictícia (Laranja Automotivo e Escuros) */
+:root {
+    --bs-primary: #ff4500; /* Laranja Esportivo */
+    --bs-primary-rgb: 255, 69, 0;
+    --bs-dark: #111111;
+}
+
+/* Modificadores de Cores Bootstrap */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #e03d00 !important;
+    border-color: #e03d00 !important;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+
+/* Customização do Cabeçalho / Carrossel */
+#carrosselDestaque .carousel-item {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-dark-overlay {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* Transições e Hovers dos Ícones Sociais */
+.hover-primary:hover {
+    color: var(--bs-primary) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Ajuste do layout geral para fixar o rodapé se houver pouco conteúdo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
